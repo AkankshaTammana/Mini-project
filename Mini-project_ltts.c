@@ -27,17 +27,20 @@ int main()
     scanf("%f", &pf1);
     printf("\n");
     
+    //Calculating the impedence of the transmission line, generally denoted as z
     x = (2 * 3.14 * 50 * l) / 1000;
     z = (sqrt(r*r + x*x)) * (L);
     
-    closs = (244 * 75 * sqrt(radius/225) * (0.28 * v1) * (0.28 * v1)) / 10000000;
-    total_closs = closs * L;
+    //Calculating the corona losses of the transmission line, here denoted as total_closs
+    closs = (244 * 75 * sqrt(radius/225) * (0.28 * v1) * (0.28 * v1)) / 10000000;   //Calculated for per km
+    total_closs = closs * L;                                                        //Calculated for total length of transmission line
 
     v2 = (v1*1000 - i1*z)/1000;
 
-    p2 = (v1*1000 * i1 * pf1) - (i1 * i1 * z + total_closs * 1000);
-    p2 = p2 / 1000;
+    p2 = (v1*1000 * i1 * pf1) - (i1 * i1 * z + total_closs * 1000);                 //Calculated output power in watts
+    p2 = p2 / 1000;                                                                 //Converting output power from watts to kilo-watts
 
+    //Calculating output power factor
     pf2 = p2 / (i1 * v2);
     if(b != 'Y'){
         printf("The detailed analysis of the transmission line at taken voltage and current are as follows \n");

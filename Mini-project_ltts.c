@@ -23,7 +23,7 @@ int main()
     printf("Enter the input parameters: \n");
     printf("Input voltage and current in kvolts and amperes respectively: ");
     scanf("%f %f", &v1, &i1);
-    printf("Input power factor: ");
+    printf("Input power factor(range must be between 0 and 1): ");
     scanf("%f", &pf1);
     printf("\n");
     

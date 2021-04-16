@@ -16,4 +16,4 @@ For every transmission line there are some parameters. They are as follows:
   3. Radius    : It is radius of the transmission line.
                  It's major effect will be on corona losses.
                  
-Based on the parameters of the transmission line and voltage, current inputs; This project gives detailed analysis of the transmission, so that we can understand that the considered pramaetrs, voltage and current inputs are feasible are not.
+Based on the parameters of the transmission line and voltage, current as input parameters; This project gives detailed analysis of the transmission, so that we can understand that the considered pramaetrs, voltage and current inputs are feasible are not.

@@ -1,3 +1,5 @@
+# Input
+![Input](https://user-images.githubusercontent.com/39006577/115017730-97162b80-9ed4-11eb-8c84-f1317fa8c945.png)
 # Test Case - 1
 ![Test Case - 1](https://user-images.githubusercontent.com/39006577/115017392-17885c80-9ed4-11eb-8874-3377084e5828.png)
 # Test Case - 2
